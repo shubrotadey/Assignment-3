@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-white fixed w-full z-20 top-0 start-0">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <div class="flex items-center">
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <a
+              href="https://flowbite.com/"
+              class="flex items-center space-x-3 rtl:space-x-reverse"
+            >
+              <span
+                class="self-center text-3xl font-bold whitespace-nowrap text-[#131318]"
+                >Hockey<span class="text-[#FF4240]">’</span>s</span
+              >
+            </a>
+          </div>
+
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center gap-x-[20px]"
+          >
+            <i class="fa-solid fa-magnifying-glass hidden md:block"></i>
+            <button
+              type="button"
+              class="text-white bg-[#FF4240] font-medium rounded-[5px] text-lg px-6 py-3 text-center"
+            >
+              Get Ticket
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-[#FF4240] hover:font-semibold rounded md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-[#424247] hover:text-[#FF4240] hover:font-semibold rounded md:p-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-[#424247] hover:text-[#FF4240] hover:font-semibold rounded md:p-0"
+                  >Pages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-[#424247] hover:text-[#FF4240] hover:font-semibold rounded md:p-0"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-[#424247] hover:text-[#FF4240] hover:font-semibold rounded md:p-0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      style="
+        background-image: url('./Images/1.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      "
+      class="xl:w-full w-[97%] rounded-[30px] h-[400px] sm:h-[450px] lg:h-[600px] max-w-screen-xl mx-auto p-4 mt-[90px] relative sm:block flex items-end"
+    >
+      <div
+        class="flex items-center gap-x-[20px] mx-auto sm:mx-0 sm:absolute left-[20px] bottom-[20px]"
+      >
+        <div
+          class="w-[50px] h-[50px] rounded-full bg-black text-white flex justify-center items-center"
+        >
+          <i class="fa-solid fa-chevron-left text-[16px]"></i>
+        </div>
+        <div
+          class="w-[50px] h-[50px] rounded-full bg-black text-white flex justify-center items-center"
+        >
+          <i class="fa-solid fa-chevron-right text-[16px]"></i>
+        </div>
+      </div>
+
+      <div
+        class="w-[70%] lg:w-[40%] hidden sm:block rounded-[20px] bg-black py-[20px] px-[30px] absolute bottom-[20px] right-[20px]"
+      >
+        <h3 class="text-white text-[22px] font-semibold">
+          Meet all the heroes from the field
+        </h3>
+        <p style="color: rgba(255, 255, 255, 0.6)" class="mt-[15px]">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+    </section>
+
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 xl:w-full w-[97%] block sm:hidden"
+    >
+      <div class="rounded-[20px] bg-black py-[20px] px-[30px] w-full">
+        <h3 class="text-white text-[22px] font-semibold">
+          Meet all the heroes from the field
+        </h3>
+        <p style="color: rgba(255, 255, 255, 0.6)" class="mt-[15px]">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+    </div>
+
+    <div class="w-[97%] mx-auto my-[30px] pt-[30px]">
+      <h2 class="text-[20px] sm:text-[25px] font-semibold text-center">
+        Professional Hockeys Club
+      </h2>
+      <p
+        class="max-w-[500px] w-full mx-auto text-center text-[#13131899] mt-[15px]"
+      >
+        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin.
+      </p>
+    </div>
+
+    <div
+      style="border-top: 2px dashed rgba(19, 19, 24, 0.2)"
+      class="max-w-screen-xl w-[97%] xl:w-full mx-auto pb-[60px]"
+    >
+      <div
+        class="mt-[40px] grid grid-cols-1 ms:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[22px]"
+      >
+        <div>
+          <div class="relative h-[120px] w-[120px] mx-auto">
+            <svg
+              class="h-full w-full"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="18"
+                cy="18"
+                r="16"
+                fill="none"
+                class="stroke-current"
+                style="color: rgba(231, 231, 232, 1)"
+                stroke-width="3"
+              ></circle>
+              <g class="origin-center -rotate-90 transform">
+                <circle
+                  cx="18"
+                  cy="18"
+                  r="16"
+                  fill="none"
+                  class="stroke-current rounded-[20px]"
+                  style="color: rgba(255, 66, 64, 1)"
+                  stroke-width="3"
+                  stroke-dasharray="100"
+                  stroke-dashoffset="13"
+                ></circle>
+              </g>
+            </svg>
+
+            <div
+              class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+            >
+              <span class="text-center text-2xl font-bold text-black">87%</span>
+            </div>
+          </div>
+
+          <h3 class="text-center font-semibold mt-[10px] text-[20px]">
+            Prayer Facility
+          </h3>
+          <p class="text-center text-[#13131899] mt-[15px]">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+
+        <div>
+          <div class="relative h-[120px] w-[120px] mx-auto">
+            <svg
+              class="h-full w-full"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="18"
+                cy="18"
+                r="16"
+                fill="none"
+                class="stroke-current"
+                style="color: rgba(231, 231, 232, 1)"
+                stroke-width="3"
+              ></circle>
+              <g class="origin-center -rotate-90 transform">
+                <circle
+                  cx="18"
+                  cy="18"
+                  r="16"
+                  fill="none"
+                  class="stroke-current rounded-[20px]"
+                  style="color: #49d293"
+                  stroke-width="3"
+                  stroke-dasharray="100"
+                  stroke-dashoffset="5"
+                ></circle>
+              </g>
+            </svg>
+
+            <div
+              class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+            >
+              <span class="text-center text-2xl font-bold text-black">95%</span>
+            </div>
+          </div>
+
+          <h3 class="text-center font-semibold mt-[10px] text-[20px]">
+            Experienced Coach
+          </h3>
+          <p class="text-center text-[#13131899] mt-[15px]">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+
+        <div>
+          <div class="relative h-[120px] w-[120px] mx-auto">
+            <svg
+              class="h-full w-full"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="18"
+                cy="18"
+                r="16"
+                fill="none"
+                class="stroke-current"
+                style="color: rgba(231, 231, 232, 1)"
+                stroke-width="3"
+              ></circle>
+              <g class="origin-center -rotate-90 transform">
+                <circle
+                  cx="18"
+                  cy="18"
+                  r="16"
+                  fill="none"
+                  class="stroke-current rounded-[20px]"
+                  style="color: #ffb546"
+                  stroke-width="3"
+                  stroke-dasharray="100"
+                  stroke-dashoffset="10"
+                ></circle>
+              </g>
+            </svg>
+
+            <div
+              class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+            >
+              <span class="text-center text-2xl font-bold text-black">90%</span>
+            </div>
+          </div>
+
+          <h3 class="text-center font-semibold mt-[10px] text-[20px]">
+            Senior Player
+          </h3>
+          <p class="text-center text-[#13131899] mt-[15px]">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+
+        <div>
+          <div class="relative h-[120px] w-[120px] mx-auto">
+            <svg
+              class="h-full w-full"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="18"
+                cy="18"
+                r="16"
+                fill="none"
+                class="stroke-current"
+                style="color: rgba(231, 231, 232, 1)"
+                stroke-width="3"
+              ></circle>
+              <g class="origin-center -rotate-90 transform">
+                <circle
+                  cx="18"
+                  cy="18"
+                  r="16"
+                  fill="none"
+                  class="stroke-current rounded-[20px]"
+                  style="color: #4c8df1"
+                  stroke-width="3"
+                  stroke-dasharray="100"
+                  stroke-dashoffset="20"
+                ></circle>
+              </g>
+            </svg>
+
+            <div
+              class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+            >
+              <span class="text-center text-2xl font-bold text-black">80%</span>
+            </div>
+          </div>
+
+          <h3 class="text-center font-semibold mt-[10px] text-[20px]">
+            Training Ground
+          </h3>
+          <p class="text-center text-[#13131899] mt-[15px]">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="border-top: 2px dashed rgba(19, 19, 24, 0.2)"
+      class="max-w-screen-xl w-[97%] mx-auto my-[30px] pt-[30px]"
+    >
+      <h2 class="text-[20px] sm:text-[25px] font-semibold text-center">
+        Program Sections
+      </h2>
+      <p
+        class="max-w-[500px] w-full mx-auto text-center text-[#13131899] mt-[15px]"
+      >
+        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin.
+      </p>
+    </div>
+
+    <div class="max-w-screen-xl w-[97%] xl:w-full mx-auto pb-[60px]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 w-full gap-[20px] mb-[20px]">
+        <div
+          class="block rounded-lg bg-white bg-cover p-6 shadow-lg relative"
+          style="background-image: url('./Images/2.png')"
+        >
+          <div
+            style="background: rgba(0, 0, 0, 0.247)"
+            class="absolute left-0 top-0 w-full h-full rounded-[12px] z-[1]"
+          ></div>
+          <div class="!z-[99999] relative">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-white mt-[40px]"
+            >
+              Junior Program
+            </h5>
+            <p class="mb-4 text-sm text-[#FFFFFF]">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              type="button"
+              class="inline-block rounded px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out bg-[#FF4240] text-white"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="block rounded-lg bg-cover p-6 shadow-lg relative"
+          style="background-image: url('./Images/3.png')"
+        >
+          <div
+            style="background: rgba(0, 0, 0, 0.247)"
+            class="absolute left-0 top-0 w-full h-full rounded-[12px] z-[1]"
+          ></div>
+          <div class="!z-[99999] relative">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-white mt-[40px]"
+            >
+              Teenager Program
+            </h5>
+            <p class="mb-4 text-sm text-[#FFFFFF]">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              type="button"
+              class="inline-block rounded px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out bg-[#FF4240] text-white"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="block rounded-lg bg-white bg-cover p-6 shadow-lg relative w-full"
+        style="background-image: url('./Images/4.png')"
+      >
+        <div
+          style="background: rgba(0, 0, 0, 0.247)"
+          class="absolute left-0 top-0 w-full h-full rounded-[12px] z-[1]"
+        ></div>
+        <div class="!z-[99999] relative">
+          <h5
+            class="mb-2 text-xl font-medium leading-tight text-white mt-[70px]"
+          >
+            Professional Program
+          </h5>
+          <p class="mb-4 text-sm text-[#FFFFFF]">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+            morbi nulla. Tortor congue sed et in.
+          </p>
+          <button
+            type="button"
+            class="inline-block rounded px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out bg-[#FF4240] text-white"
+          >
+            Register Now!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="border-top: 2px dashed rgba(19, 19, 24, 0.2)"
+      class="max-w-screen-xl w-[97%] mx-auto my-[30px] pt-[30px]"
+    >
+      <h2 class="text-[20px] sm:text-[25px] font-semibold text-center">
+        Our New Products
+      </h2>
+      <p
+        class="max-w-[500px] w-full mx-auto text-center text-[#13131899] mt-[15px]"
+      >
+        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin.
+      </p>
+    </div>
+
+    <div
+      style="border-top: 2px dashed rgba(19, 19, 24, 0.2)"
+      class="max-w-screen-xl w-[97%] xl:w-full mx-auto grid grid-cols-1 md:grid-cols-2 pt-[30px] gap-[30px]"
+    >
+      <div class="block sm:flex items-center gap-x-[10px] justify-between">
+        <img
+          src="./Images/5.png"
+          class="w-[80%] mx-auto sm:w-[30%] h-auto"
+          alt=""
+        />
+        <div class="w-[80%] mx-auto sm:mx-0 sm:mt-0 mt-[15px] sm:w-[67%]">
+          <div class="flex items-center gap-x-[15px]">
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-solid fa-star text-[#F99808]"></i>
+              <p class="text-[15px] text-[#13131880]">5.0</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-eye text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">20</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-heart text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">200</p>
+            </div>
+          </div>
+
+          <h3 class="text-black text-[18px] font-bold mt-[5px]">
+            World Cup Flags Football
+          </h3>
+
+          <p class="mt-[5px] text-[#13131899] mb-[15px]">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+          </p>
+
+          <div class="flex items-center gap-x-[15px]">
+            <p class="text-[16px] text-[#FF4240]">Price - $22.00</p>
+            <p class="text-[16px] text-[#13131880]">Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block sm:flex items-center gap-x-[10px] justify-between">
+        <img
+          src="./Images/6.png"
+          class="w-[80%] mx-auto sm:w-[30%] h-auto"
+          alt=""
+        />
+        <div class="w-[80%] mx-auto sm:mx-0 sm:mt-0 mt-[15px] sm:w-[67%]">
+          <div class="flex items-center gap-x-[15px]">
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-solid fa-star text-[#F99808]"></i>
+              <p class="text-[15px] text-[#13131880]">5.0</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-eye text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">20</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-heart text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">200</p>
+            </div>
+          </div>
+
+          <h3 class="text-black text-[18px] font-bold mt-[5px]">
+            World Cup Flags Football
+          </h3>
+
+          <p class="mt-[5px] text-[#13131899] mb-[15px]">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+          </p>
+
+          <div class="flex items-center gap-x-[15px]">
+            <p class="text-[16px] text-[#FF4240]">Price - $22.00</p>
+            <p class="text-[16px] text-[#13131880]">Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block sm:flex items-center gap-x-[10px] justify-between">
+        <img
+          src="./Images/7.png"
+          class="w-[80%] mx-auto sm:w-[30%] h-auto"
+          alt=""
+        />
+        <div class="w-[80%] mx-auto sm:mx-0 sm:mt-0 mt-[15px] sm:w-[67%]">
+          <div class="flex items-center gap-x-[15px]">
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-solid fa-star text-[#F99808]"></i>
+              <p class="text-[15px] text-[#13131880]">5.0</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-eye text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">20</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-heart text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">200</p>
+            </div>
+          </div>
+
+          <h3 class="text-black text-[18px] font-bold mt-[5px]">
+            World Cup Flags Football
+          </h3>
+
+          <p class="mt-[5px] text-[#13131899] mb-[15px]">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+          </p>
+
+          <div class="flex items-center gap-x-[15px]">
+            <p class="text-[16px] text-[#FF4240]">Price - $22.00</p>
+            <p class="text-[16px] text-[#13131880]">Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block sm:flex items-center gap-x-[10px] justify-between">
+        <img
+          src="./Images/8.png"
+          class="w-[80%] mx-auto sm:w-[30%] h-auto"
+          alt=""
+        />
+        <div class="w-[80%] mx-auto sm:mx-0 sm:mt-0 mt-[15px] sm:w-[67%]">
+          <div class="flex items-center gap-x-[15px]">
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-solid fa-star text-[#F99808]"></i>
+              <p class="text-[15px] text-[#13131880]">5.0</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-eye text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">20</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-heart text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">200</p>
+            </div>
+          </div>
+
+          <h3 class="text-black text-[18px] font-bold mt-[5px]">
+            World Cup Flags Football
+          </h3>
+
+          <p class="mt-[5px] text-[#13131899] mb-[15px]">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+          </p>
+
+          <div class="flex items-center gap-x-[15px]">
+            <p class="text-[16px] text-[#FF4240]">Price - $22.00</p>
+            <p class="text-[16px] text-[#13131880]">Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block sm:flex items-center gap-x-[10px] justify-between">
+        <img
+          src="./Images/9.png"
+          class="w-[80%] mx-auto sm:w-[30%] h-auto"
+          alt=""
+        />
+        <div class="w-[80%] mx-auto sm:mx-0 sm:mt-0 mt-[15px] sm:w-[67%]">
+          <div class="flex items-center gap-x-[15px]">
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-solid fa-star text-[#F99808]"></i>
+              <p class="text-[15px] text-[#13131880]">5.0</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-eye text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">20</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-heart text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">200</p>
+            </div>
+          </div>
+
+          <h3 class="text-black text-[18px] font-bold mt-[5px]">
+            World Cup Flags Football
+          </h3>
+
+          <p class="mt-[5px] text-[#13131899] mb-[15px]">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+          </p>
+
+          <div class="flex items-center gap-x-[15px]">
+            <p class="text-[16px] text-[#FF4240]">Price - $22.00</p>
+            <p class="text-[16px] text-[#13131880]">Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block sm:flex items-center gap-x-[10px] justify-between">
+        <img
+          src="./Images/10.png"
+          class="w-[80%] mx-auto sm:w-[30%] h-auto"
+          alt=""
+        />
+        <div class="w-[80%] mx-auto sm:mx-0 sm:mt-0 mt-[15px] sm:w-[67%]">
+          <div class="flex items-center gap-x-[15px]">
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-solid fa-star text-[#F99808]"></i>
+              <p class="text-[15px] text-[#13131880]">5.0</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-eye text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">20</p>
+            </div>
+
+            <div class="flex gap-x-[5px] items-center">
+              <i class="fa-regular fa-heart text-[#13131880]"></i>
+              <p class="text-[15px] text-[#13131880]">200</p>
+            </div>
+          </div>
+
+          <h3 class="text-black text-[18px] font-bold mt-[5px]">
+            World Cup Flags Football
+          </h3>
+
+          <p class="mt-[5px] text-[#13131899] mb-[15px]">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+          </p>
+
+          <div class="flex items-center gap-x-[15px]">
+            <p class="text-[16px] text-[#FF4240]">Price - $22.00</p>
+            <p class="text-[16px] text-[#13131880]">Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="border-top: 2px dashed rgba(19, 19, 24, 0.2)"
+      class="max-w-screen-xl w-[97%] mx-auto my-[30px] pt-[30px]"
+    >
+      <h2 class="text-[20px] sm:text-[25px] font-semibold text-center">
+        Clients Question
+      </h2>
+      <p
+        class="max-w-[500px] w-full mx-auto text-center text-[#13131899] mt-[15px]"
+      >
+        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin.
+      </p>
+    </div>
+    <section>
+        <div
+      style="border-top: 2px dashed rgba(19, 19, 24, 0.2)"
+      class="max-w-screen-xl w-[97%] mx-auto my-[30px] pt-[30px]">
+      <h2 class="text-[20px] sm:text-[25px] font-semibold text-center">
+        Get In Touch
+      </h2>
+      <p
+        class="max-w-[500px] w-full mx-auto text-center text-[#13131899] mt-[15px]"
+      >
+        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin.
+      </p>
+    </div>
+    </section>   
+  </body>
+</html>
